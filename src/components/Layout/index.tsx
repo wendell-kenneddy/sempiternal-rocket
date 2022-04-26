@@ -1,6 +1,6 @@
 import { Box } from '@mantine/core';
 import { ReactElement } from 'react';
-import { Navbar } from './Navbar';
+import { Navbar } from '../Navbar';
 
 interface LayoutProps {
   children: ReactElement;
@@ -13,9 +13,9 @@ export function Layout({ children }: LayoutProps) {
 
       <Box
         sx={({ breakpoints }) => ({
-          width: '100%',
+          width: '90%',
           maxWidth: breakpoints.sm,
-          margin: '5rem auto 1rem'
+          margin: '0 auto'
         })}
       >
         {children}
