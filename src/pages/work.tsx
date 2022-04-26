@@ -1,5 +1,6 @@
 import { Title } from '@mantine/core';
 import Head from 'next/head';
+import { AnimatedLayout } from '../components/Layout/AnimatedLayout';
 
 export default function WorkPage() {
   return (
@@ -8,7 +9,9 @@ export default function WorkPage() {
         <title>Wendell Kenneddy | Work</title>
       </Head>
 
-      <Title>Work</Title>
+      <AnimatedLayout>
+        <Title>Work</Title>
+      </AnimatedLayout>
     </>
   );
 }
