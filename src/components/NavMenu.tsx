@@ -1,7 +1,7 @@
 import { Burger, Menu } from '@mantine/core';
 import { NextLink } from '@mantine/next';
 import { useState } from 'react';
-import { NavLink } from './NavLink';
+import { NavMenuText } from './NavMenuText';
 
 export function NavMenu() {
   const [opened, setOpened] = useState(false);
@@ -13,13 +13,13 @@ export function NavMenu() {
       onClose={() => setOpened(false)}
     >
       <Menu.Item component={NextLink} href="/bio">
-        <NavLink href="/bio">Bio</NavLink>
+        <NavMenuText href="/bio">Bio</NavMenuText>
       </Menu.Item>
       <Menu.Item component={NextLink} href="/work">
-        <NavLink href="/work">Work</NavLink>
+        <NavMenuText href="/work">Work</NavMenuText>
       </Menu.Item>
       <Menu.Item component={NextLink} href="/contact">
-        <NavLink href="/contact">Contact</NavLink>
+        <NavMenuText href="/contact">Contact</NavMenuText>
       </Menu.Item>
     </Menu>
   );
