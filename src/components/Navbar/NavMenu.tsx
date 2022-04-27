@@ -1,6 +1,7 @@
 import { Burger, Menu } from '@mantine/core';
 import { NextLink } from '@mantine/next';
 import { useState } from 'react';
+import { GithubLink } from './GithubLink';
 import { NavMenuText } from './NavMenuText';
 
 export function NavMenu() {
@@ -18,8 +19,11 @@ export function NavMenu() {
       <Menu.Item component={NextLink} href="/work">
         <NavMenuText href="/work">Work</NavMenuText>
       </Menu.Item>
-      <Menu.Item component={NextLink} href="/contact">
-        <NavMenuText href="/contact">Contact</NavMenuText>
+      <Menu.Item
+        component={NextLink}
+        href="https://github.com/wendell-kenneddy/portfolio"
+      >
+        <GithubLink asText />
       </Menu.Item>
     </Menu>
   );
