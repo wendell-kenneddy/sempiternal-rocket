@@ -1,6 +1,6 @@
 import { Box } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import { Logo } from './Logo';
+import { Logo } from '../Logo';
 import { NavLinks } from './NavLinks';
 import { NavMenu } from './NavMenu';
 
