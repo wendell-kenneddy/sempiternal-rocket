@@ -1,4 +1,5 @@
 import { Box } from '@mantine/core';
+import { GithubLink } from './GithubLink';
 import { NavLink } from './NavLink';
 
 export function NavLinks() {
@@ -12,7 +13,7 @@ export function NavLinks() {
     >
       <NavLink href="/bio">Bio</NavLink>
       <NavLink href="/work">Work</NavLink>
-      <NavLink href="/contact">Contact</NavLink>
+      <GithubLink />
     </Box>
   );
 }
