@@ -12,6 +12,7 @@ export function Layout({ children }: LayoutProps) {
       <Navbar />
 
       <Box
+        component="main"
         sx={({ breakpoints }) => ({
           width: '90%',
           maxWidth: breakpoints.sm,
