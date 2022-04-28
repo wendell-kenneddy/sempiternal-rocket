@@ -17,8 +17,8 @@ export function CanvasContainer({ children }: CanvasContainerProps) {
         alignItems: 'center',
         justifyContent: 'center',
         '@media (min-width: 768px)': {
-          width: 540,
-          height: 540
+          width: 640,
+          height: 640
         }
       })}
     >
