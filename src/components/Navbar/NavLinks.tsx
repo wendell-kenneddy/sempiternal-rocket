@@ -11,7 +11,6 @@ export function NavLinks() {
         gap: spacing.xs
       })}
     >
-      <NavLink href="/bio">Bio</NavLink>
       <NavLink href="/work">Work</NavLink>
       <GithubLink />
     </Box>
