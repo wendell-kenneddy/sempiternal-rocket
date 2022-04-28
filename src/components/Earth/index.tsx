@@ -21,7 +21,7 @@ export function Earth() {
   return (
     <>
       <mesh ref={meshRef} castShadow={true} receiveShadow={false}>
-        <sphereGeometry args={[2, 32, 32]} />
+        <sphereGeometry args={[2.5, 128, 128]} />
         <meshStandardMaterial {...props} />
       </mesh>
       <ambientLight />
