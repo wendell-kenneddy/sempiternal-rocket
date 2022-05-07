@@ -1,4 +1,4 @@
-import { Box, Button, Stack, Text, Title } from '@mantine/core';
+import { Button, Stack, Text, Title } from '@mantine/core';
 import Head from 'next/head';
 import { AnimatedLayout } from '../components/Layout/AnimatedLayout';
 import { Earth } from '../components/Earth';
@@ -9,6 +9,7 @@ import Link from 'next/link';
 import { SocialLink } from '../components/SocialLink';
 import { FaGithub } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+import { PageTitle } from '../components/PageTitle';
 
 const CanvasContainer = dynamic<CanvasContainerProps>(
   () =>
@@ -31,25 +32,7 @@ export default function Home() {
           <Earth />
         </CanvasContainer>
 
-        <Box
-          sx={({ radius, spacing, fn: { rgba } }) => ({
-            background: rgba('#fff', 0.1),
-            width: '100%',
-            borderRadius: radius.md,
-            padding: spacing.xs,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            backdropFilter: 'blur(10px)',
-            '@media (min-width: 768px)': {
-              marginTop: '-7rem'
-            }
-          })}
-        >
-          <Title sx={({ fontSizes }) => ({ fontSize: fontSizes.lg })}>
-            Hi, I&apos;m a web dev student!
-          </Title>
-        </Box>
+        <PageTitle title="Hi, I'm a web dev student!" />
 
         <Title my="sm" order={3}>
           About me
