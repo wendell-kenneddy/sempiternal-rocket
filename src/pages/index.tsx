@@ -24,7 +24,35 @@ export default function Home() {
   return (
     <>
       <Head>
+        <meta
+          name="description"
+          content="A journey through Wendell Kenneddy's portfolio."
+        />
+        <meta name="author" content="Wendell Kenneddy" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Wendell Kenneddy | Homepage" />
+        <meta property="og:site_name" content="Wendell Kenneddy | Homepage" />
+        <meta
+          property="og:description"
+          content="A journey through Wendell Kenneddy's portfolio."
+        />
+        <meta
+          property="og:url"
+          content="https://sempiternalrocket.vercel.app/"
+        />
+        <meta property="og:locale" content="en-US" />
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:title" content="Wendell Kenneddy | Homepage" />
+        <meta
+          property="twitter:description"
+          content="A journey through Wendell Kenneddy's portfolio."
+        />
+        <meta
+          property="twitter:url"
+          content="https://sempiternalrocket.vercel.app/"
+        />
         <title>Wendell Kenneddy | Homepage</title>
+        <link rel="canonical" href="https://sempiternalrocket.vercel.app/" />
       </Head>
 
       <AnimatedLayout>
