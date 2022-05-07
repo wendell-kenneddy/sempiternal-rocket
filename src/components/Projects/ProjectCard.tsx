@@ -1,5 +1,5 @@
 import { Card, Image, Text, Title } from '@mantine/core';
-import { ProjectData } from '.';
+import { ProjectData } from '../../data/projects';
 
 interface ProjectCardProps {
   project: ProjectData;
