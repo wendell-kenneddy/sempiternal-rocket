@@ -7,18 +7,23 @@ interface PageTitleProps {
 export function PageTitle({ title }: PageTitleProps) {
   return (
     <Box
-      sx={({ radius, spacing, fn: { rgba } }) => ({
-        background: rgba('#fff', 0.1),
+      sx={({ colors, radius, spacing, fn: { rgba } }) => ({
+        background: rgba(colors.dark[9], 0.6),
         width: '100%',
         borderRadius: radius.md,
         padding: spacing.xs,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        backdropFilter: 'blur(10px)',
+        position: 'relative',
+        zIndex: 999,
         '@media (min-width: 768px)': {
           marginTop: '-7rem'
-        }
+        },
+        '@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none))':
+          {
+            backdropFilter: 'blur(10px)'
+          }
       })}
     >
       <Title sx={({ fontSizes }) => ({ fontSize: fontSizes.lg })}>
