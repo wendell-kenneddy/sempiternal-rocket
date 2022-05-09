@@ -3,7 +3,7 @@
   "short_name": "SemRocket",
   "description": "A journey through Wendell Kenneddy's portfolio.",
   "id": "sempiternal-rocket",
-  "theme_color": "#1011131a",
+  "theme_color": "#10111399",
   "background_color": "#1a1b1e",
   "display": "standalone",
   "orientation": "portrait-primary",
