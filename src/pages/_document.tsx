@@ -18,6 +18,7 @@ export default class _Document extends Document {
           <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
           <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
           <link rel="manifest" href="/manifest.json" />
+          <meta name="theme-color" content="#10111399" />
         </Head>
         <body>
           <Main />
