@@ -15,8 +15,6 @@ export function PageTitle({ title }: PageTitleProps) {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        position: 'relative',
-        zIndex: 999,
         '@media (min-width: 768px)': {
           marginTop: '-7rem'
         },
