@@ -11,7 +11,7 @@ export function Navbar() {
     <Box
       component="header"
       sx={({ spacing, colors, shadows, fn: { rgba } }) => ({
-        background: rgba(colors.dark[9], 0.1),
+        background: rgba(colors.dark[9], 0.6),
         width: '100%',
         paddingBlock: spacing.xs,
         paddingInline: spacing.lg,
@@ -23,7 +23,10 @@ export function Navbar() {
         top: 0,
         left: 0,
         zIndex: '99',
-        backdropFilter: 'blur(10px)'
+        '@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none))':
+          {
+            backdropFilter: 'blur(10px)'
+          }
       })}
     >
       <Box
