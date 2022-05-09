@@ -62,11 +62,15 @@ export default function Home() {
 
         <PageTitle title="Hi, I'm a web dev student!" />
 
-        <Title my="sm" order={3}>
+        <Title
+          my="sm"
+          order={3}
+          sx={() => ({ position: 'relative', zIndex: 999 })}
+        >
           About me
         </Title>
 
-        <Text my="sm">
+        <Text my="sm" sx={() => ({ position: 'relative', zIndex: 999 })}>
           I am a web development student based on Brazil, with passion for
           learning new technologies and solving problems. I also love music and
           games in general.
